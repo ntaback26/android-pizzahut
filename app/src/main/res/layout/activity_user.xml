@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="10sp"
+    android:paddingLeft="20sp"
+    android:paddingRight="20sp"
+    android:paddingTop="10sp"
+    tools:context="com.android.yuen.pizzahut.view.UserActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarLogin"
+                        style="@android:style/Widget.ProgressBar.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="150sp"
+                        android:indeterminate="true" />
+
+                    <EditText
+                        android:id="@+id/txtLoginEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="20sp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <EditText
+                        android:id="@+id/txtLoginPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20sp"
+                        android:ems="10"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="Đăng Nhập"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarRegister"
+                        style="@android:style/Widget.ProgressBar.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="150sp"
+                        android:indeterminate="true" />
+
+                    <EditText
+                        android:id="@+id/txtRegisterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="20sp"
+                        android:ems="10"
+                        android:hint="Tên người dùng"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <EditText
+                        android:id="@+id/txtRegisterEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <EditText
+                        android:id="@+id/txtRegisterPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:ems="10"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <EditText
+                        android:id="@+id/txtRegisterPassword2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20sp"
+                        android:ems="10"
+                        android:hint="Xác nhận mật khẩu"
+                        android:inputType="textPassword"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/MyEditTextTheme" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/yellow"
+                        android:text="Đăng ký"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

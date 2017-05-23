@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">PizzaHut</string>
+
+    <!-- Strings related to login -->
+    <string name="login_email_empty">Email không thể bỏ trống</string>
+    <string name="login_password_empty">Mật khẩu không thể bỏ trống</string>
+    <string name="login_success">Chúc mừng bạn đã đăng nhập thành công</string>
+    <string name="login_error">Email hoặc mật khẩu không chính xác</string>
+
+    <!-- Strings related to register -->
+    <string name="register_name_empty">Tên người dùng không thể bỏ trống</string>
+    <string name="register_email_empty">Email không thể bỏ trống</string>
+    <string name="register_password_empty">Mật khẩu không thể bỏ trống</string>
+    <string name="register_password_length">Mật khẩu có độ dài tối thiểu 8 ký tự</string>
+    <string name="register_password2_match">Xác nhận mật khẩu không trùng khớp</string>
+    <string name="register_success">Chúc mừng bạn đã đăng ký thành công</string>
+    <string name="register_error">Email đã được sử dụng</string>
+
+    <!-- Strings related to checkout -->
+    <string name="checkout_cart_empty">Giỏ hàng của bạn đang rỗng</string>
+    <string name="checkout_name_empty">Tên người nhận không thể bỏ trống</string>
+    <string name="checkout_phone_empty">SĐT người nhận không thể bỏ trống</string>
+    <string name="checkout_address_empty">Địa chỉ người nhận không thể bỏ trống</string>
+    <string name="checkout_success">Chúc mừng bạn đã đặt hàng thành công!</string>
+    <string name="checkout_error">Đặt hàng không thành công</string>
+
+    <!-- Strings related to search -->
+    <string name="search_keyword_empty">Nội dung tìm kiếm không thể bỏ trống</string>
+
+    <!-- Strings related to security -->
+    <string name="authentication">Vui lòng đăng nhập hoặc đăng ký để thực hiện chức năng này</string>
+
+    <!-- Navigation drawer -->
+    <string-array name="guess_navs">
+        <item>Menu</item>
+        <item>Giỏ hàng</item>
+        <item>Đăng nhập/Đăng ký</item>
+        <item>Bản đồ</item>
+    </string-array>
+    <string-array name="member_navs">
+        <item>Menu</item>
+        <item>Giỏ hàng</item>
+        <item>Đặt hàng</item>
+        <item>Bản đồ</item>
+        <item>Thoát</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

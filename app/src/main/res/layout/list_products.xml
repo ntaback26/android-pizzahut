@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="3sp"
+    android:paddingTop="3sp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5sp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="220sp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Pizza Thập Cẩm Cao Cấp"
+            android:textColor="@color/white"
+            tools:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="90000 đ"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnViewDetails"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/view" />
+
+        <ImageButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:background="@drawable/cart" />
+
+    </LinearLayout>
+
+</LinearLayout>
